@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-community
+pypdf
+pymupdf
+tqdm
+sentence-transformers
+faiss-cpu
+chromadb
+langchain-text-splitters
