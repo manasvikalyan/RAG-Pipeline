@@ -126,6 +126,12 @@ async def root():
     }
 
 
+@app.get("/health")
+async def health_check():
+    """Simple health endpoint to verify that the API server is running."""
+    return {"status": "ok"}
+
+
 @app.get("/status", response_model=SystemStatusResponse)
 async def get_status():
     """Get the current status of the RAG system."""
